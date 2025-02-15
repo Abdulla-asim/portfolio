@@ -33,13 +33,6 @@
       p {
         color: rgb(85, 85, 85);
       }
-      #div1 {
-        padding-left: 40px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-right: 40px;
-        background-color: #164f38d0;
-      }
       #pfp {
         height: 27rem;
         width: 20rem;
@@ -52,7 +45,8 @@
       nav {
         justify-content: space-around;
         align-items: center;
-        height: 17vh;
+        height: 14vh;
+        background-color: rgba(59, 93, 91, 0.788);
       }
       .nav-links {
         gap: 2rem;
@@ -83,6 +77,50 @@
         box-sizing: border-box;
         min-height: fit-content;
       }
+      .section-container {
+        display: flex;
+      }
+      #profile {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 80vh;
+      }
+      .section_pic-container {
+        display: flex;
+        float: left;
+        height: 500px;
+        width: 500px;
+        margin: auto 0;
+      }
+      .section_text {
+        align-self: center;
+        text-align: center;
+      }
+      .section_text p {
+        font-weight: 600;
+      }
+      .section_text_p2 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+      }
+      .title {
+        font-size: 3rem;
+        text-align: center;
+      }
+      .socials-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        gap: 1rem;
+      }
+      .icon {
+        cursor: pointer;
+        height: 2rem;
+      }
+      .button-container {
+        gap: 1rem;
+      }
     </style>
   </head>
 
@@ -107,7 +145,11 @@
 
     <section id="profile">
       <div class="section_pic-container">
-        <img src="/images/me.jpeg" alt="Abdullah Profile Picture" />
+        <img
+          src="/images/me.jpeg"
+          alt="Abdullah Profile Picture"
+          style="border-radius: 2%"
+        />
       </div>
       <div class="section_text">
         <p class="section_text_p1">Hello, I'm</p>
@@ -115,13 +157,13 @@
         <p class="section_text_p2">Full Stack Developer</p>
         <div class="button_container">
           <a
-            class="btb-color-2"
+            class="btn-color-1"
             target="_blank"
             href="./images/resume-example.pdf"
           >
             Download CV
           </a>
-          <a class="btb-color-2" target="_blank" href="./contact.html">
+          <a class="btn-color-2" target="_blank" href="./contact.html">
             Contact Me
           </a>
         </div>
