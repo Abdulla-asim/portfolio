@@ -94,11 +94,66 @@
             text-align: center;
             margin-bottom: 3rem;
         }
+
         #active {
             color: rgb(160, 160, 160);
             text-decoration: underline;
             text-underline-offset: 1rem;
             text-decoration-color: rgb(181, 181, 181);
+        }
+
+        .multimedia,
+        .location {
+            margin: 5rem 10rem;
+            padding: 2rem;
+            background-color: rgba(59, 93, 91, 0.1);
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .multimedia h2,
+        .location h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: rgba(59, 93, 91, 0.9);
+        }
+
+        .multimedia p,
+        .location p {
+            text-align: center;
+            font-size: 1.25rem;
+            color: rgb(85, 85, 85);
+            margin-bottom: 1rem;
+        }
+
+        audio,
+        video {
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+
+        .mapouter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+            width: 100%;
+        }
+
+        .gmap_canvas {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+        }
+
+        .gmap_iframe {
+            width: 1080px;
+            height: 700px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -134,6 +189,30 @@
             in CTF
             competitions. I am always eager to learn new things and improve my skills.
         </p>
+    </section>
+
+    <section class="multimedia">
+        <h2>Multimedia</h2>
+        <p>Check out my latest tech talk:</p>
+        <audio controls>
+            <source src="media/speech.mp3" type="audio/mp3" />
+            Your browser does not support the audio element.
+        </audio>
+        <p>Watch my tutorial on Cybersecurity:</p>
+        <video width="320" height="240" controls>
+            <source src="media/tutorial.mp4" type="video/mp4" />
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <section class="location">
+        <h2>Location</h2>
+        <div class="mapouter">
+            <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0"
+                    marginwidth="0"
+                    src="https://maps.google.com/maps?width=1000&amp;height=600&amp;hl=en&amp;q=NUst islamabad&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe>
+            </div>
     </section>
 </body>
 
