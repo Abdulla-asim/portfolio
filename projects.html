@@ -1,132 +1,141 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <title>Projects - Abdullah Asim</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <meta charset="Utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Projects by Abdullah Asim" />
+    <meta name="author" content="Abdullah Asim" />
+    <meta
+      name="keywords"
+      content="Projects, Abdullah Asim, Portfolio, Web Development, Cybersecurity, Machine Learning"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
     <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            line-height: 2rem;
-        }
-
-        body {
-            font-family: "Poppins", sans-serif;
-        }
-
-        p {
-            color: rgb(85, 85, 85);
-            font-size: larger;
-            margin: 1rem;
-        }
-
-        nav,
-        .nav-links {
-            display: flex;
-        }
-
-        nav {
-            justify-content: space-around;
-            align-items: center;
-            height: 14vh;
-            background-color: rgba(59, 93, 91, 0.788);
-        }
-
-        .nav-links {
-            gap: 2rem;
-            list-style: none;
-            font-size: 1.5rem;
-        }
-
-        a {
-            color: black;
-            text-decoration: none;
-            text-decoration-color: white;
-        }
-
-        a:hover {
-            color: rgb(160, 160, 160);
-            text-decoration: underline;
-            text-underline-offset: 1rem;
-            text-decoration-color: rgb(181, 181, 181);
-        }
-
-        .logo {
-            font-size: 2rem;
-        }
-
-        .logo:hover {
-            cursor: default;
-        }
-
-        section {
-            height: 80vh;
-            padding: 7rem 20rem;
-            box-sizing: border-box;
-            min-height: fit-content;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .section-container {
-            display: flex;
-        }
-
-        .section_text_p2 {
-            font-size: 1.75rem;
-            margin-bottom: 1rem;
-        }
-
-        .title {
-            font-size: 3rem;
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .project-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .project-container img {
-            height: 300px;
-            width: 300px;
-            border-radius: 10px;
-            border: 3px solid rgb(72, 111, 114);
-        }
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      p {
+        color: rgb(85, 85, 85);
+      }
+      nav,
+      .nav-links {
+        display: flex;
+      }
+      nav {
+        justify-content: space-around;
+        align-items: center;
+        height: 14vh;
+        background-color: rgba(59, 93, 91, 0.788);
+      }
+      .nav-links {
+        gap: 2rem;
+        list-style: none;
+        font-size: 1.5rem;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+        text-decoration-color: white;
+      }
+      a:hover {
+        color: grey;
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+        text-decoration-color: rgb(181, 181, 181);
+      }
+      .logo {
+        font-size: 2rem;
+      }
+      .logo:hover {
+        cursor: default;
+      }
+      section {
+        padding: 4vh;
+        gap: 5rem;
+        height: 96vh;
+        margin: 0 10rem;
+        box-sizing: border-box;
+        min-height: fit-content;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+      }
+      .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+      }
+      .project-card {
+        background-color: rgb(173, 191, 191);
+        padding: 1rem;
+        border-radius: 2rem;
+        width: 30%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 300ms ease;
+      }
+      .project-card:hover {
+        transform: translateY(-10px);
+      }
+      .project-card img {
+        width: 100%;
+        border-radius: 1rem;
+      }
+      .project-card h3 {
+        margin: 1rem 0;
+      }
+      .project-card p {
+        font-size: 1rem;
+      }
     </style>
 </head>
-
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Abdullah Asim</div>
+    <nav>
+      <div class="logo">Projects</div>
+      <div>
         <ul class="nav-links">
-            <li><a href="portfolio.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <li><a href="portfolio.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
+      </div>
     </nav>
 
-    <section id="projects">
-        <h1 class="title">Projects</h1>
-        <p class="section_text_p2">
-            Explore some of my recent projects in Full Stack Development, Cybersecurity, and Machine Learning.
-        </p>
-        <div class="project-container">
-            <figure>
-                <img src="img1.jpg" alt="">
-                <img src="img2.jpg" alt="">
-                <img src="img3.jpg" alt="">
-            </figure>
+    <section class="projects">
+      <div class="title">
+        <p>My Projects</p>
+      </div>
+      <div class="project-container">
+        <div class="project-card">
+          <img src="images/project1.png" alt="Project 1">
+          <h3>Platformer Game in C++</h3>
+          <p>This project is a 2D platformer game developed using C++. It features multiple levels, various enemies, and power-ups. The game mechanics include jumping, running, and shooting.</p>
         </div>
+        <div class="project-card">
+          <img src="images/project2.jpg" alt="Project 2">
+          <h3>AI Chess Engine</h3>
+          <p>This project is an AI-powered chess engine that can play chess at a competitive level. It uses advanced algorithms and machine learning techniques to evaluate board positions and make optimal moves.</p>
+        </div>
+        <div class="project-card">
+          <img src="images/project3.jpg" alt="Project 3">
+          <h3>Ride Hailing Application</h3>
+          <p>This project is a ride-hailing application that connects drivers with passengers. It features real-time tracking, fare estimation, and secure payment processing. The app is built using modern web technologies.</p>
+        </div>
+      </div>
     </section>
-</body>
 
+    <footer>
+      <p>&copy; 2025 Abdullah Asim. All Rights Reserved.</p>
+    </footer>
+</body>
 </html>
