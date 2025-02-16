@@ -1,180 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Contact - Abdullah Asim</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <meta charset="UTF-8" />
-    <meta name="description" content="Contact Abdullah Asim" />
-    <meta name="author" content="Abdullah Asim" />
-    <meta
-      name="keywords"
-      content="Contact, Abdullah Asim, Portfolio, Web Development, Cybersecurity, Machine Learning"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      * {
-        margin: 0px;
-        padding: 0px;
-      }
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-      p {
-        color: rgb(85, 85, 85);
-      }
-      nav,
-      .nav-links {
-        display: flex;
-      }
-      nav {
-        justify-content: space-around;
-        align-items: center;
-        height: 14vh;
-        background-color: rgba(59, 93, 91, 0.788);
-      }
-      .nav-links {
-        gap: 2rem;
-        list-style: none;
-        font-size: 1.5rem;
-      }
-      a {
-        color: black;
-        text-decoration: none;
-        text-decoration-color: white;
-      }
-      a:hover {
-        color: grey;
-        text-decoration: underline;
-        text-underline-offset: 1rem;
-        text-decoration-color: rgb(181, 181, 181);
-      }
-      .logo {
-        font-size: 2rem;
-      }
-      .logo:hover {
-        cursor: default;
-      }
-      section {
-        padding: 4vh;
-        gap: 5rem;
-        height: 96vh;
-        margin: 0 10rem;
-        box-sizing: border-box;
-        min-height: fit-content;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-      .title {
-        font-size: 3rem;
-        margin-bottom: 2rem;
-      }
-      .contact-form {
-        text-align: center;
-        font-size: 2rem;
-        background-color: rgb(173, 191, 191);
-        padding: 1rem;
-        border-radius: 2rem;
-      }
-      .contact-form div {
-        margin-bottom: 1.5rem;
-      }
-      button {
-        border: none;
-        padding: 1rem;
-        border-radius: 2rem;
-        width: 10rem;
-        background-color: black;
-        color: white;
-        font-size: 1rem;
-        transition: all 300ms ease;
-      }
-      button:hover {
-        background-color: rgb(85, 85, 85);
-      }
-      input {
-        border: none;
-        padding: 1rem;
-        width: 15%;
-        border-radius: 2rem;
-      }
-      textarea {
-        border: none;
-        border-radius: 2rem;
-        width: 30%;
-        padding: 1rem;
-      }
-      label {
-        font-size: 1rem;
-      }
-      .contact {
-        border-radius: 2rem;
-        height: 83vh;
-      }
-    </style>
-  </head>
-  <body>
-    <nav>
-      <div class="logo">Contact Me</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="portfolio.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-        </ul>
-      </div>
-    </nav>
 
-    <section class="contact">
-      <div class="title">
-        <p>Contact Form</p>
-      </div>
-      <div class="contact-form">
-        <form action="submit_form.php" method="post">
-          <div class="name">
-            <label for="name">Full Name:</label><br />
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Enter your full name"
-              required
-              maxlength="50"
-            />
-          </div>
+<head>
+  <title>Contact - Abdullah Asim</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <meta charset="UTF-8" />
+  <meta name="description" content="Contact Abdullah Asim" />
+  <meta name="author" content="Abdullah Asim" />
+  <meta name="keywords" content="Contact, Abdullah Asim, Portfolio, Web Development, Cybersecurity, Machine Learning" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
 
-          <div class="email">
-            <label for="email">Email Address:</label><br />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Enter your email"
-              required
-            />
-          </div>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
 
-          <div class="message">
-            <label for="message">Message:</label><br />
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Type your message here..."
-              rows="5"
-              required
-            ></textarea>
-          </div>
+    p {
+      color: rgb(85, 85, 85);
+    }
 
-          <div class="button">
-            <button type="submit">Submit</button>
-          </div>
-        </form>
-      </div>
-    </section>
+    nav,
+    .nav-links {
+      display: flex;
+    }
 
-    <footer>
-      <p>&copy; 2025 Abdullah Asim. All Rights Reserved.</p>
-    </footer>
-  </body>
+    nav {
+      justify-content: space-around;
+      align-items: center;
+      height: 14vh;
+      background-color: rgba(59, 93, 91, 0.788);
+    }
+
+    .nav-links {
+      gap: 2rem;
+      list-style: none;
+      font-size: 1.5rem;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      text-decoration-color: white;
+    }
+
+    a:hover {
+      color: grey;
+      text-decoration: underline;
+      text-underline-offset: 1rem;
+      text-decoration-color: rgb(181, 181, 181);
+    }
+
+    .logo {
+      font-size: 2rem;
+    }
+
+    .logo:hover {
+      cursor: default;
+    }
+
+    section {
+      padding: 4vh;
+      gap: 5rem;
+      height: 96vh;
+      margin: 0 10rem;
+      box-sizing: border-box;
+      min-height: fit-content;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-form {
+      text-align: center;
+      font-size: 2rem;
+      background-color: rgb(173, 191, 191);
+      padding: 1rem;
+      border-radius: 2rem;
+    }
+
+    .contact-form div {
+      margin-bottom: 1.5rem;
+    }
+
+    button {
+      border: none;
+      padding: 1rem;
+      border-radius: 2rem;
+      width: 10rem;
+      background-color: black;
+      color: white;
+      font-size: 1rem;
+      transition: all 300ms ease;
+    }
+
+    button:hover {
+      background-color: rgb(85, 85, 85);
+    }
+
+    input {
+      border: none;
+      padding: 1rem;
+      width: 15%;
+      border-radius: 2rem;
+    }
+
+    textarea {
+      border: none;
+      border-radius: 2rem;
+      width: 30%;
+      padding: 1rem;
+    }
+
+    label {
+      font-size: 1rem;
+    }
+
+    .contact {
+      border-radius: 2rem;
+      height: 83vh;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">Contact Me</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="portfolio.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="contact">
+    <div class="title">
+      <p>Contact Form</p>
+    </div>
+    <div class="contact-form">
+      <form action="submit_form.php" method="post">
+        <div class="name">
+          <label for="name">Full Name:</label><br />
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required maxlength="50" />
+        </div>
+
+        <div class="email">
+          <label for="email">Email Address:</label><br />
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="message">
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message" placeholder="Type your message here..." rows="5" required></textarea>
+        </div>
+
+        <div class="button">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Abdullah Asim. All Rights Reserved.</p>
+  </footer>
+</body>
+
 </html>

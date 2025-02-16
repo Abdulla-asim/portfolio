@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About - Abdullah Asim</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <meta charset="Utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            line-height: 2rem;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+        p {
+            color: rgb(85, 85, 85);
+            font-size: larger;
+            margin: 1rem;
+        }
+
+        nav,
+        .nav-links {
+            display: flex;
+        }
+
+        nav {
+            justify-content: space-around;
+            align-items: center;
+            height: 14vh;
+            background-color: rgba(59, 93, 91, 0.788);
+        }
+
+        .nav-links {
+            gap: 2rem;
+            list-style: none;
+            font-size: 1.5rem;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            text-decoration-color: white;
+        }
+
+        a:hover {
+            color: rgb(160, 160, 160);
+            text-decoration: underline;
+            text-underline-offset: 1rem;
+            text-decoration-color: rgb(181, 181, 181);
+        }
+
+        .logo {
+            font-size: 2rem;
+        }
+
+        .logo:hover {
+            cursor: default;
+        }
+
+        section {
+            height: 96vh;
+            margin: 0 10rem;
+            box-sizing: border-box;
+            min-height: fit-content;
+        }
+
+        .section-container {
+            display: flex;
+        }
+
+        #about {
+
+            /* display: flex; */
+            padding: 10rem;
+            height: 80vh;
+            flex-direction: column;
+            justify-content: center;
+            /* text-align: center; */
+        }
+
+        .section_text_p2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .title {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Abdullah Asim</div>
+        <ul class="nav-links">
+            <li><a href="portfolio.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        <p class="section_text_p2">
+            I am a Full Stack Developer, Machine Learning Engineer and a Bug Bounty
+            Hunter.
+        </p>
+        <p>
+            I started my journey in software development two years ago. Since then, I have worked on various projects,
+            ranging
+            from Web Applications to Image Classification. My expertise includes frontend development using
+            React,
+            backend APIs with Node.js, Machine Learning using PyTorch, and Bug Bounty Hunting using linux with software
+            tools like BurpSuite and Nmap.
+        </p>
+        <p>
+            Apart from coding, I enjoy reading about new technologies, experimenting with AI models, and participating
+            in CTF
+            competitions. I am always eager to learn new things and improve my skills.
+        </p>
+    </section>
+</body>
+
+</html>
