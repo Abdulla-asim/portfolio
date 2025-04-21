@@ -9,133 +9,8 @@
   <meta name="author" content="Abdullah Asim" />
   <meta name="keywords" content="Contact, Abdullah Asim, Portfolio, Web Development, Cybersecurity, Machine Learning" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    * {
-      margin: 0px;
-      padding: 0px;
-    }
 
-    body {
-      font-family: "Poppins", sans-serif;
-    }
-
-    p {
-      color: rgb(85, 85, 85);
-    }
-
-    nav,
-    .nav-links {
-      display: flex;
-    }
-
-    nav {
-      justify-content: space-around;
-      align-items: center;
-      height: 14vh;
-      background-color: rgba(59, 93, 91, 0.788);
-    }
-
-    .nav-links {
-      gap: 2rem;
-      list-style: none;
-      font-size: 1.5rem;
-    }
-
-    a {
-      color: black;
-      text-decoration: none;
-      text-decoration-color: white;
-    }
-
-    a:hover {
-      color: rgb(160, 160, 160);
-      text-decoration: underline;
-      text-underline-offset: 1rem;
-      text-decoration-color: rgb(181, 181, 181);
-    }
-
-    .logo {
-      font-size: 2rem;
-    }
-
-    .logo:hover {
-      cursor: default;
-    }
-
-    section {
-      padding: 4vh;
-      gap: 5rem;
-      height: 96vh;
-      margin: 0 10rem;
-      box-sizing: border-box;
-      min-height: fit-content;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    .title {
-      font-size: 3rem;
-      margin-bottom: 2rem;
-    }
-
-    .contact-form {
-      text-align: center;
-      font-size: 2rem;
-      background-color: rgb(173, 191, 191);
-      padding: 1rem;
-      border-radius: 2rem;
-    }
-
-    .contact-form div {
-      margin-bottom: 1.5rem;
-    }
-
-    #active {
-      color: rgb(160, 160, 160);
-      text-decoration: underline;
-      text-underline-offset: 1rem;
-      text-decoration-color: rgb(181, 181, 181);
-    }
-
-    button {
-      border: none;
-      padding: 1rem;
-      border-radius: 2rem;
-      width: 10rem;
-      background-color: black;
-      color: white;
-      font-size: 1rem;
-      transition: all 300ms ease;
-    }
-
-    button:hover {
-      background-color: rgb(85, 85, 85);
-    }
-
-    input {
-      border: none;
-      padding: 1rem;
-      width: 15%;
-      border-radius: 2rem;
-    }
-
-    textarea {
-      border: none;
-      border-radius: 2rem;
-      width: 30%;
-      padding: 1rem;
-    }
-
-    label {
-      font-size: 1rem;
-    }
-
-    .contact {
-      border-radius: 2rem;
-      height: 83vh;
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -152,9 +27,9 @@
     </div>
   </nav>
 
-  <section class="contact">
-    <div class="title">
-      <p>Contact Form</p>
+  <section id="contact">
+    <div >
+      <h1 class="title">Contact Form</h1>
     </div>
     <div class="contact-form">
       <form action="submit_form.php" method="post">
@@ -179,10 +54,6 @@
       </form>
     </div>
   </section>
-
-  <footer>
-    <p>&copy; 2025 Abdullah Asim. All Rights Reserved.</p>
-  </footer>
 </body>
 
 </html>
