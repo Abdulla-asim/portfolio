@@ -1,3 +1,35 @@
+#back-to-top {
+  display: inline-block;
+  background-color: rgba(59, 93, 91, 0.788);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#back-to-top::after {
+  color: #fff;
+}
+#back-to-top:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#back-to-top:active {
+  background-color: #555;
+}
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 /* Index.html */
 * {
   margin: 0;
@@ -17,6 +49,7 @@ p {
   color: rgb(85, 85, 85);
 }
 
+
 nav,
 .nav-links {
   display: flex;
@@ -27,6 +60,10 @@ nav {
   align-items: center;
   height: 12vh;
   background-color: rgba(59, 93, 91, 0.788);
+}
+
+body #hamburger-nav {
+  display: none;
 }
 
 .nav-links {
@@ -241,7 +278,7 @@ button:hover {
 input {
   border: none;
   padding: 1rem;
-  width: 15%;
+  width: 25%;
   border-radius: 2rem;
 }
 
@@ -270,6 +307,17 @@ footer {
 
 footer p {
   color: #aeaeae;
+}
+
+.input-group div{
+  /* position: absolute; */
+  font-size: medium;
+  color: rgb(196, 40, 92);
+  margin: 0.5rem;
+}
+
+.input-group div i {
+  color: green;
 }
 
 /* Experience.html */
@@ -376,6 +424,8 @@ h3 {
   font-size: 1rem;
 }
 
+
+
 /* Transition */
 a,
 .btn {
@@ -461,22 +511,28 @@ a,
   transform: none;
 }
 
-/*  */
-/* <!-- For mobile deviecs (is not complete yet) -->
-<nav id="hamburger-nav">
-    <div class="logo">Abdullah Asim</div>
-    <div class="hamburger-menu">
-    <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-    </div>
-    </div>
-</nav>
-<!-- Mobile devices hamburger end --> */
+#welcome-message {
+  position: fixed;
+  top: 59%;
+  left: 89%;
+  display: flex;
+  justify-content: center;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 135px 20px;
+  border-radius: 50%;
+  font-size: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1000;
+  transition: opacity 1s ease;
+  width: 20%;
+}
+
+body #welcome-message.show {
+  opacity: 1;
+}
+
+
+/* <!-- For mobile deviecs --> */

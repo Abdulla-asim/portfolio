@@ -17,15 +17,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
-  <link href="./style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/462a968c37.js" crossorigin="anonymous"></script>
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <!-- <body> with a header, main content, and footer section. -->
 
 <body>
-  <!-- Use proper semantic HTML tags such as <article>, <section>, <nav>, <aside>,
-            and <footer>. -->
+  
 
   <!-- Desktop nav bar -->
   <nav id="desktop-nav">
@@ -41,6 +40,28 @@
     </div>
   </nav>
   <!-- Desktop navbar end -->
+
+  <!-- Mobile Navbar -->
+  <nav id="hamburger-nav">
+    <div class="logo">Abdullah Asim</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Welcome Banner -->
+  <div id="welcome-message">Welcome!</div>
+
 
   <section id="profile">
     <div class="section_pic-container">
@@ -68,6 +89,9 @@
       </div>
     </div>
   </section>
+
+  <button id="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
