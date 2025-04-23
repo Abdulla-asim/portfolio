@@ -101,7 +101,7 @@ a:hover {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 86vh;
+  height: 88vh;
 }
 
 .section_pic-container {
@@ -147,11 +147,9 @@ a:hover {
   gap: 1rem;
 }
 
-#active {
+nav #active {
   color: rgb(160, 160, 160);
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration: none;
 }
 
 /* About.html */
@@ -178,8 +176,9 @@ a:hover {
 
 .multimedia,
 .location {
-  margin: 5rem 10rem;
+  margin: 5rem auto;
   padding: 2rem;
+  width: 70%;
   background-color: rgba(59, 93, 91, 0.1);
   border-radius: 10px;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
@@ -225,8 +224,8 @@ video {
 }
 
 .gmap_iframe {
-  width: 1080px;
-  height: 700px;
+  width: 900px;
+  height: 450px;
   border-radius: 10px;
 }
 
@@ -235,7 +234,7 @@ video {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 86vh;
+  height: 89vh;
   width: 70%;
   margin: 0 auto;
 }
@@ -322,7 +321,7 @@ footer p {
 
 /* Experience.html */
 #experience {
-  height: 86vh;
+  height: 89vh;
   display: flex;
   min-height: fit-content;
   flex-direction: column;
@@ -370,10 +369,10 @@ h3 {
 /* Projects.html */
 .projects {
   padding: 2rem;
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
   text-align: center;
-  height: 160vh;
+  /* height: 160vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -396,7 +395,7 @@ h3 {
   background-color: rgb(173, 191, 191);
   padding: 1rem;
   border-radius: 1.5rem;
-  width: 30%;
+  width: 35%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 300ms ease;
   overflow: hidden;
@@ -423,6 +422,51 @@ h3 {
 .project-card p {
   font-size: 1rem;
 }
+
+.project-card video {
+  width: 300px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+  background-color: rgb(49, 49, 49);
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-time-div {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  /* background-color: #333; */
+  /* align-items: right; */
+  justify-content: right;
+}
+
+#current-time, #current-date{
+  color: white;
+  cursor: none;
+}
+
+#current-date {
+  font-size: medium;
+}
+
+
+
+
+
+
 
 
 

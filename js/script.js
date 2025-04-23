@@ -92,3 +92,15 @@ function validateForm()
     }
 }
 
+
+// Time
+let time = document.getElementById("current-time");
+let date = document.getElementById("current-date");
+
+setInterval(() => {
+    let current_date = new Date();
+    time.innerHTML = current_date.toLocaleTimeString();
+}, 1000);
+
+let current_date = new Date();
+date.innerHTML = current_date.toLocaleDateString();
