@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/462a968c37.js" crossorigin="anonymous"></script>
-
-
+    <link rel="stylesheet" href="./css/mediaqueries.css">
 </head>
 
 <body>
@@ -24,6 +23,25 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- Mobile Navbar -->
+  <nav id="hamburger-nav">
+    <div class="logo">Abdullah Asim</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="./index.html" onclick="toggleMenu()">Home</a></li>
+        <li><a href="./about.html" onclick="toggleMenu()">About</a></li>
+        <li><a href="./experience.html" onclick="toggleMenu()" id="active">Experience</a></li>
+        <li><a href="./projects.html" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
 
     <section id="experience">
         <h1 class="title">Experience</h1>

@@ -1,3 +1,13 @@
+// Hamburger Menu
+function toggleMenu() {
+    let menu = document.querySelector('.menu-links');
+    let icon = document.querySelector('.hamburger-icon');
+
+    menu.classList.toggle('open');
+    icon.classList.toggle('open');
+}
+
+
 // Welcome Display
 window.addEventListener('DOMContentLoaded', () => {
     const msg = document.getElementById('welcome-message');

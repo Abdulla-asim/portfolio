@@ -13,11 +13,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/462a968c37.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mediaqueries.css">
 
 </head>
 
 <body>
-  <nav>
+  <nav id="desktop-nav">
     <div class="logo">Abdullah Asim</div>
     <div>
       <ul class="nav-links">
@@ -27,6 +28,25 @@
         <li><a href="projects.html" id="active">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+    </div>
+  </nav>
+
+  <!-- Mobile Navbar -->
+  <nav id="hamburger-nav">
+    <div class="logo">Abdullah Asim</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="./index.html" onclick="toggleMenu()">Home</a></li>
+        <li><a href="./about.html" onclick="toggleMenu()">About</a></li>
+        <li><a href="./experience.html" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="./projects.html" onclick="toggleMenu()" id="active">Projects</a></li>
+        <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
+      </div>
     </div>
   </nav>
 
@@ -41,40 +61,56 @@
     <br>
     <div class="project-container">
       <div class="project-card">
-        <img src="images/project1.png" alt="Project 1">
-        <h3>Platformer Game in C++</h3>
-        <p>This project is a 2D platformer game developed using C++. It features multiple levels, various enemies, and
+        <div class="card-img">
+          <img src="images/project1.png" alt="Project 1">
+        </div>
+        <div class="card-text">
+          <h3>Platformer Game in C++</h3>
+          <p>This project is a 2D platformer game developed using C++. It features multiple levels, various enemies, and
           power-ups. The game mechanics include jumping, running, and shooting.</p>
+        </div>
       </div>
       <div class="project-card">
-        <img src="images/project2.png" alt="Project 2">
-        <h3>AI Chess Engine</h3>
-        <p>This project is an AI-powered chess engine that can play chess at a competitive level. It uses advanced
-          algorithms and machine learning techniques to evaluate board positions and make optimal moves.</p>
+        <div class="card-text">
+          <img src="images/project2.png" alt="Project 2">
+        </div>
+        <div class="card-text">
+          <h3>AI Chess Engine</h3>
+          <p>This project is an AI-powered chess engine that can play chess at a competitive level. It uses advanced
+            algorithms and machine learning techniques to evaluate board positions and make optimal moves.</p>
+        </div>
       </div>
       <div class="project-card">
-        <img src="images/project3.jpg" alt="Project 3">
-        <h3>Ride Hailing Application</h3>
-        <p>This project is a ride-hailing application that connects drivers with passengers. It features real-time
-          tracking, fare estimation, and secure payment processing. The app is built using modern web technologies.</p>
+        <div class="card-text">
+          <img src="images/project3.jpg" alt="Project 3">
+        </div>
+        <div class="card-text">
+          <h3>Ride Hailing Application</h3>
+          <p>This project is a ride-hailing application that connects drivers with passengers. It features real-time
+            tracking, fare estimation, and secure payment processing. The app is built using modern web technologies.</p>
+        </div>
       </div>
       <div class="project-card">
         <audio controls>
           <source src="audio/audio1.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
-        <h3>Sample Music</h3>
-        <p>This is a piece of music I composed for the main menu of a game. It sets the tone and atmosphere for the
-          game, providing an immersive experience for the players.</p>
+        <div class="card-text">
+          <h3>Sample Music</h3>
+          <p>This is a piece of music I composed for the main menu of a game. It sets the tone and atmosphere for the
+            game, providing an immersive experience for the players.</p>
+        </div>
       </div>
       <div class="project-card">
         <video width="320" height="240" controls>
           <source src="video/typing.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-        <h3>Typing Application</h3>
-        <p>This is a typing application I made which takes individual input from every key on the keyboard, displaying
-          it along with key animations.</p>
+        <div class="card-text">
+          <h3>Typing Application</h3>
+          <p>This is a typing application I made which takes individual input from every key on the keyboard, displaying
+            it along with key animations.</p>
+        </div>
       </div>
   </section>
 
